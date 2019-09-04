@@ -608,4 +608,14 @@ body {
   padding: 1em;
 }
 
+.btn {
+  outline: none;
+  border: 2px solid #24303B;
+  color: #24303B;
+  padding: 0.5em 1em;
+  font-size: 15px;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=styles.css.map */
