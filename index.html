@@ -22,6 +22,14 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/ready.js"></script>
+<style type="text/css" media="print">
+  @media print {
+    #where p {
+      font-size: 14px;
+      color: red;
+    }
+  }
+</style>
 </head>
 <body class="section_middle_center">
   <header class="w_100 section_middle_center">
@@ -129,14 +137,7 @@ a tu estilo de vida.</mark>
                 </div>
                 <div class="where-info">
                   <div class="where-info__content">
-                  <style type="text/css" media="print">
-                    @media print {
-                      #where p {
-                          font-size:14px;
-                          color: red;
-                      } 
-                    }
-                  </style>
+                 
 <div class="h_space_100" id="where">
 
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat accusantium id voluptates culpa nesciunt perferendis similique dolorum itaque iste deserunt libero, porro harum cumque tempore sequi. Laboriosam a nobis, consequatur laborum voluptatum possimus sit optio veniam? Esse, impedit aperiam dignissimos, ipsum iusto eaque itaque fuga neque error doloremque facilis minus deserunt facere laboriosam quae autem ratione laborum. Obcaecati ipsa provident nostrum qui suscipit laboriosam fugiat nemo, odit sapiente cum aliquid magni accusamus exercitationem culpa pariatur ea voluptatem iste sequi non, tempore vel illo molestiae nisi dolorum! Sequi ea voluptas iusto fugit impedit at, voluptatum eos id! Iusto minima repellat, ea maxime cumque error nulla adipisci. Architecto consequuntur excepturi, totam animi commodi illum quis ea natus in tenetur ipsa alias blanditiis sunt ratione culpa, ex quo, accusamus fuga cum debitis! Sed excepturi cumque iste beatae dolore architecto accusantium quia ducimus velit quos ipsum iusto quo laborum veniam aut laudantium omnis aliquid in ut, voluptatibus inventore amet quasi explicabo. Dolorum vero, ex consequuntur a accusantium, omnis rem impedit iure odio numquam officiis totam fuga placeat laboriosam suscipit ratione esse doloremque dolorem fugit! Voluptatibus placeat, cum commodi eveniet aliquam, delectus error distinctio tenetur quasi a dignissimos ipsam quas vero facere corporis. Deserunt corporis, excepturi doloribus nesciunt molestias dolorum maxime eveniet. Molestias repudiandae sit culpa adipisci minus delectus atque, doloremque quisquam debitis exercitationem incidunt sed dolor corrupti, iusto itaque facere rerum laborum fugiat id tempore aliquam! Provident dolorum accusamus atque eligendi magni! Est atque corrupti magni ratione quibusdam nulla? Aperiam, impedit necessitatibus molestiae repudiandae, non suscipit quibusdam voluptatum mollitia fugit temporibus laboriosam recusandae similique nemo minus ducimus dignissimos vitae laborum. Porro modi nostrum nihil odit facere libero et dolorem dignissimos tempore amet odio voluptatum, repudiandae assumenda saepe, aut temporibus, alias qui tenetur distinctio atque quia est. Sapiente doloribus et consequatur magni. Non aspernatur alias numquam, eaque distinctio minima dolorum temporibus magnam pariatur maxime inventore adipisci possimus veniam ad, quasi minus libero sit similique quaerat reiciendis dolorem laudantium repellat animi? Harum debitis nulla repudiandae eligendi facilis facere quia ea, maiores distinctio dolores officia delectus ullam pariatur! Neque incidunt omnis dolor error quas molestias quod magni, ut mollitia placeat necessitatibus itaque nam minus odit quae. Natus ipsa eligendi libero dolor porro odio doloremque dolore minus accusantium, sit recusandae illum earum perspiciatis, sequi velit. Accusamus expedita obcaecati deserunt itaque fuga, id iste blanditiis earum libero quibusdam. Repellat, consequuntur quasi placeat temporibus assumenda earum, nam eaque expedita vero beatae atque quae. Autem tenetur qui, velit ad recusandae voluptatibus perspiciatis at quibusdam soluta pariatur. Officiis, adipisci a dolorem veniam temporibus, tenetur, culpa modi ab error nemo ducimus numquam blanditiis necessitatibus tempore. Optio eum consectetur alias laborum dolor qui perspiciatis reiciendis atque exercitationem cupiditate, fuga ducimus dolorem dolores nemo temporibus eaque libero ullam autem. Laboriosam ut facere hic. Illum perferendis numquam iusto molestias dignissimos deserunt ad, accusamus quam aperiam alias voluptates nostrum tenetur, reprehenderit laudantium maxime! Enim corrupti eum qui nisi obcaecati, eveniet assumenda laboriosam molestias, ipsam commodi totam cumque sunt explicabo deserunt, a culpa. Ducimus voluptatem tempora numquam.</p>
@@ -146,7 +147,10 @@ a tu estilo de vida.</mark>
                   </div>
                 </div>
             </div>
-          <button class="btn" onclick="javascript:imprim1(where);" >Imprimir</button>
+          <button class="btn btn-outline-dark mt-10" onclick="javascript:imprim1(where);" >Imprimir</button>
+          <button class="btn btn-blue-dark" >Outline</button>
+<button class="btn btn-outline-black ">Outline</button>
+<button class="btn btn-outline-jade ">Outline</button>
       </div>
      
     </div>
@@ -224,6 +228,9 @@ a tu estilo de vida.</mark>
           <label for="comments" class="w_100">Comentarios
             <textarea name="comments" id="comments" rows="7"></textarea>
           </label>
+          <div class="w_100 section_middle_right ">
+              <a class="btn btn-jade pl-30 pr-30" href="#"> ENVIAR </a>
+           </div>
         </form>
         <div data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="600">
           <h2 class="tituloContacto marginVertical_tiny">COMUNÍCATE CON NOSOTROS</h2>

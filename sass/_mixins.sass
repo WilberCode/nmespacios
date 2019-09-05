@@ -1,0 +1,22 @@
+@mixin button-bg($bg:#1C2B39,$text-color:#ffffff) 
+  background: $bg
+  color: $text-color
+  &:hover 
+    background: darken($bg, 8%)
+    transition: all 0.3s ease 
+  &:active 
+    background: darken($bg, 25%) 
+
+@mixin button-outline($outline-width:2, $outline-color:#1C2B39, $text-color:#1C2B39,$bg:#1C2B39) 
+  background: #ffffff
+  color: $text-color
+  border-style: solid 
+  border-width: $outline-width+px
+  border-color: $outline-color
+  &:hover 
+    background:$bg
+    transition: all 0.3s ease 
+    color: white
+  &:active 
+    background:$bg
+    color: white

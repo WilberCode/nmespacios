@@ -1,4 +1,6 @@
 @import _variables
+@import _mixins
+@import _clases
 
 body
   font-family: $bodyFont
@@ -17,7 +19,7 @@ body
         text-align: right
         a
           font-size: 1.5rem
-          color: $grayColor
+          color: $gray-dark
           width: 100%
           display: block
           margin: 0
@@ -40,14 +42,14 @@ body
     z-index: 1
     h1
       text-align: center
-      background-color: rgba($grayColor, .95)
+      background-color: rgba($gray-dark, .95)
       padding: 30px 10px
       margin: 0
       font-size: 2.2rem
-      color: $whiteColor
+      color: #ffffff
       font-family: $primaryFont
       span
-        color: $jadeColor
+        color: $second-jade
   
   .caracteristicas
     font-family: $primaryFont
@@ -62,16 +64,16 @@ body
         width: 75%
 
   .linkFilter
-    border: 2px solid $jadeColor
+    border: 2px solid $second-jade
     padding: 10px 25px
     margin: 10px 0
-    color: $grayColor
+    color: $gray-dark
     font-weight: 700
     letter-spacing: 1px
     &:hover
       content: ''
-      color: $whiteColor
-      background-color: $jadeColor
+      color: #ffffff
+      background-color: $second-jade
   
   .manPhone
     position: relative
@@ -80,8 +82,8 @@ body
     margin: 40px 0
   
   .espacios
-    background-color: $darkBlueColor
-    color: $whiteColor
+    background-color: $first-blue-dark
+    color: #ffffff
     padding: 25px 0
     margin-bottom: 20px
     font-weight: 700
@@ -96,8 +98,8 @@ body
     margin: 20px auto 20px
     width: 60%
     text-align: center
-    border: 2px solid $jadeColor
-    color: $jadeColor
+    border: 2px solid $second-jade
+    color: $second-jade
     padding: 10px 0
     font-weight: 700
   
@@ -113,23 +115,23 @@ body
     margin: 20px 0
   
   .wrappContacto
-    background-color: $darkBlueColor
-    color: $whiteColor
+    background-color: $first-blue-dark
+    color: #ffffff
     position: relative
     padding: 25px 0
     width: 100%
     margin: 15px 0
     overflow: hidden
     a
-      color: $whiteColor
+      color: #ffffff
   
   .contacto
     position: relative
-    border: 1px solid $whiteColor
+    border: 1px solid #ffffff
     padding: 20px 30px
     margin: 20px 0
     label
-      color: $whiteColor
+      color: #ffffff
       font-size: 1.3rem
       letter-spacing: 1px
       margin-bottom: 10px
@@ -140,7 +142,7 @@ body
         margin-top: 5px
     &::before
       content: ''
-      background-color: $darkBlueColor
+      background-color: $first-blue-dark
       position: absolute
       top: -2px
       right: 10%
@@ -148,7 +150,7 @@ body
       height: 4px
     &::after
       content: ''
-      background-color: $darkBlueColor
+      background-color: $first-blue-dark
       position: absolute
       bottom: -2px
       right: 10%
@@ -161,7 +163,7 @@ body
     font-weight: 100
     font-size: 2.8rem
   .correo
-    color: $whiteColor
+    color: #ffffff
     font-size: 1.6rem
   .proyectos
     margin: 20px 0 
@@ -172,13 +174,13 @@ body
         width: 100%
     h2
       font-family: $primaryFont
-      color: $darkBlueColor
+      color: $first-blue-dark
       font-size: 2.1rem
 
   footer
-    background-color: $darkBlueColor
+    background-color: $first-blue-dark
     padding: 15px 0
-    color: $whiteColor
+    color: #ffffff
     p
       text-align: center
       width: 100%
@@ -196,7 +198,7 @@ body
         content: ""
         width: 10px
         height: 10px
-        background-color: $jadeColor
+        background-color: $second-jade
         position: absolute
         top: 5px
         bottom: 0
@@ -224,7 +226,7 @@ body
       font-family: $primaryFont
     
   .overflow
-    background-color: rgba($blackColor, .8)
+    background-color: rgba($first-blue-black, .8)
     position: fixed
     top: 0
     bottom: 0
@@ -251,7 +253,7 @@ body
       width: 100%
       font-family: $primaryFont
       padding: 10px 0
-      color: $whiteColor
+      color: #ffffff
       letter-spacing: 1px
       font-weight: 100
       font-size: 1.8rem
@@ -262,12 +264,12 @@ body
       min-width: 15px
       path
         transition: all ease-in-out .3s
-        color: $whiteColor
+        color: #ffffff
     &:hover
       svg
         path
           transition: all ease-in-out .3s
-          color: $jadeColor
+          color: $second-jade
   
   .showModalWrapp
     opacity: 1
@@ -319,8 +321,8 @@ body
 @media all and (min-width: 768px)
   .espacios
     font-size: 2.1rem
-    border-top: 30px solid $whiteColor
-    border-bottom: 30px solid $whiteColor
+    border-top: 30px solid #ffffff
+    border-bottom: 30px solid #ffffff
     img
       width: 100%
   .linkFilter
@@ -355,7 +357,7 @@ body
         text-align: inherit
         a
           padding: 3px 15px
-          border-right: 2px solid rgba($grayColor, .5)
+          border-right: 2px solid rgba($gray-dark, .5)
           text-align: center
           display: inline
           width: 100%
@@ -377,8 +379,8 @@ body
     margin: 20px 15px
 
   .espacios
-    border-top: 40px solid $whiteColor
-    border-bottom: 40px solid $whiteColor
+    border-top: 40px solid #ffffff
+    border-bottom: 40px solid #ffffff
   
   .titleUbicacion
     font-size: 2.8rem
@@ -445,7 +447,7 @@ body
     z-index: 99
     left: 0
     right: 0
-    background-color: $darkBlueColor
+    background-color: $first-blue-dark
     ul
       margin: 0
       padding: 0
@@ -455,7 +457,7 @@ body
         a
           width: 90%
           text-align: center
-          color: $whiteColor
+          color: #ffffff
           padding: 10px 0
           font-size: 1rem
           display: block
@@ -467,7 +469,7 @@ body
 .nm
   &__title
     font-family: $primaryFont
-    color: $darkBlueColor
+    color: $first-blue-dark
     font-size: 2.1rem
     
   &__description
@@ -495,16 +497,44 @@ body
     &__content
       width: 100%
       height: 100%
-      overflow-y: scroll
+      overflow-y: scroll 
+
+/*Button*/
+
+.btn 
+  outline: none
+  border-style: solid 
+  border-color: $first-blue-dark
+  background: #ffffff
+  text-decoration: none
+  color: #24303B
+  padding-top: 10px
+  padding-right: 16px
+  padding-bottom: 10px
+  padding-left:16px
+  font-size: 15px
+  font-weight: 500
+  cursor: pointer
+  
+  
+.btn-blue-dark 
+  @include button-bg($first-blue-dark,#ffffff)   
+.btn-blue-black 
+  @include button-bg($first-blue-black,#ffffff)
+.btn-jade
+  @include button-bg($second-jade,#ffffff) 
+
+.btn-outline-dark 
+  @include button-outline(1,$first-blue-dark,$first-blue-dark,$first-blue-dark)   
+.btn-outline-black 
+  @include button-outline(2,$first-blue-black,$first-blue-black,$first-blue-black)
+.btn-outline-jade
+  @include button-outline(2,$second-jade,$second-jade,$second-jade) 
+ 
+
+/* hack */
 .h_space_100
   height: 74em
   padding: 1em
 
-.btn
-  outline: none
-  border: 2px solid #24303B
-  color: #24303B
-  padding: .5em 1em
-  font-size: 15px
-  margin-top: 1em
-  font-weight: bold
+
