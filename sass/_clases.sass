@@ -1,10 +1,37 @@
+// BG Colors 
+.bg-dark
+  background: $first-blue-dark 
+.bg-black
+  background: $first-blue-black
+.bg-jade
+  background: $second-jade 
+.gray-light  
+  background:  $gray-light
+.gray-dark 
+  background:  $gray-dark
+// TEXT Colors 
+.text-dark
+  color: $first-blue-dark 
+.text-black
+  color: $first-blue-black
+.text-jade
+  color: $second-jade !important
+.text-gray-light  
+  color: $gray-light
+.text-gray-dark 
+  color: $gray-dark
 
-/*Paddings*/
- 
+  /*Paddings*/ 
 @for $i from 1 through 30
   /*paddings #{$i} */  
   .p-#{$i}
-    padding: $i+px !important  
+    padding: $i+px !important
+  .py-#{$i}
+    padding-top: $i+px !important
+    padding-bottom: $i+px !important 
+  .px-#{$i}
+    padding-right: $i+px !important
+    padding-left: $i+px !important
   .pt-#{$i}
     padding-top: $i+px !important
   .pr-#{$i}
@@ -19,7 +46,13 @@
 @for $i from 1 through 30
   /*margins #{$i} */
   .m-#{$i}
-    margin: $i+px !important  
+    margin: $i+px !important
+  .my-#{$i}
+    margin-top: $i+px !important
+    margin-bottom: $i+px !important 
+  .mx-#{$i}
+    margin-right: $i+px !important
+    margin-left: $i+px !important  
   .mt-#{$i}
     margin-top: $i+px !important
   .mr-#{$i}
@@ -28,4 +61,93 @@
     margin-bottom: $i+px !important
   .ml-#{$i}
     margin-left: $i+px !important
- 
+
+// Border radios
+@for $i from 1 through 30
+  /*fonts #{$i}*/
+  .rounded-#{$i}
+    border-radius: #{$i}px
+.rounded-full
+  border-radius: 50%
+
+// Border
+@for $i from 1 through 4
+  /*fonts #{$i}*/
+  .border-#{$i}
+    border: $i+px solid $first-blue-dark 
+  .border-t-#{$i}
+    border-top: $i+px solid #ffffff
+  .border-r-#{$i}
+    border-right:$i+px solid $first-blue-dark
+  .border-b-#{$i}
+    border-bottom:$i+px solid $first-blue-dark
+  .border-l-#{$i}
+    border-left:$i+px solid $first-blue-dark
+
+.border-dark
+  border-color: $first-blue-dark
+.border-black
+  border-color: $first-blue-black
+.border-jade
+  border-color: $second-jade
+
+
+/*Buttons*/  
+.btn 
+  outline: none
+  border-style: solid 
+  border-color: transparent 
+  text-decoration: none 
+  padding-top: 10px
+  padding-right: 16px
+  padding-bottom: 10px
+  padding-left:16px
+  font-size: 15px
+  font-weight: 500
+  cursor: pointer
+  @include button-bg($first-blue-dark,#ffffff) 
+.btn-dark 
+  @include button-bg($first-blue-dark,#ffffff)   
+.btn-black 
+  @include button-bg($first-blue-black,#ffffff)
+.btn-jade
+  @include button-bg($second-jade,#ffffff) 
+
+.btn-outline-dark 
+  @include button-outline(2,$first-blue-dark)   
+.btn-outline-dark-thin
+  @include button-outline(1,$first-blue-dark)   
+.btn-outline-black 
+  @include button-outline(2,$first-blue-black)
+.btn-outline-black-thin 
+  @include button-outline(1,$first-blue-black)
+.btn-outline-jade
+  @include button-outline(2,$second-jade) 
+.btn-outline-jade-thin
+  @include button-outline(1,$second-jade) 
+
+// Font Weight 
+@for $f from 1 through 9
+  /*fonts #{$f}00*/
+  .font-#{$f}00
+    font-weight: #{$f}00
+
+// Font Size 
+@for $i from 8 through 40
+  /*fonts #{$i}00*/
+  .text-#{$i}
+    font-size: #{$i}px
+
+// Font Family 
+.font-ak
+  font-family:$primaryFont
+
+// Display
+.inline-block
+  display: inline-block
+.block
+  display: block 
+
+//Overflow
+.overflow-hidden
+  overflow: hidden
