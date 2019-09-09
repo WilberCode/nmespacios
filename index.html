@@ -14,10 +14,15 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/aos.css" rel="stylesheet">
   <!--<link rel="stylesheet" type="text/css" href="css/styles.min.css" />-->  
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css" />
+
   <!-- <script src="js/slick.min.js"></script> -->
   <script src="js/parallax.min.js"></script>
   <script src="js/aos.js"></script>
@@ -50,10 +55,9 @@
   <section id="nosotros" class="w_100 section_middle_center">
     <div class="w_85 w_60_desktop section_middle_justify">
       <div class="w_100 w_40_desktop section_middle_center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-<p>
-  <mark>
+<p> 
 <strong> Te damos el espacio que necesitas</strong> en departamentos espaciosos, funcionales y perfectamente distribuidos que se adaptan
-a tu estilo de vida.</mark>
+a tu estilo de vida. 
 </p>
         <ul class="lista">
           <li>Iluminación y ventilación natural.</li>
@@ -79,7 +83,7 @@ a tu estilo de vida.</mark>
         </ul>
       </div>
       <div class="w_100 w_48_desktop">
-        <img src="images/rutte1.jpg" alt="rutte1" width="100%" class="marginVertical_normal" />
+        <img src="images/fachada.png" alt="rutte1" width="100%" class="marginVertical_normal" />
       </div>
     </div>
     <div class="w_85 w_60_desktop section_middle_center">
@@ -90,28 +94,57 @@ a tu estilo de vida.</mark>
     <div class="w_85 w_60_desktop section_middle_center" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
       <div class="slider w_100">
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/loby.jpg" alt="loby" class="w_100" data-caption="Loby" />
+          <img src="images/gallery/lobby.png" alt="lobby" class="w_100" data-caption="Lobby" />
         </div>
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/area-comun.jpg" alt="area comun" class="w_100" data-caption="Área común con terraza" />
+          <img src="images/gallery/area-comun.png" alt="area comun" class="w_100" data-caption="Sala lounge de uso común"/>
         </div>
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/cocina.jpg" alt="cocina" class="w_100" data-caption="Cocina: granito en encimeras de cocina, muebles de MDF, pisos de porcelanato." />
+          <img src="images/gallery/cocina.png" alt="cocina" class="w_100 " data-caption="Cocina: granito en encimeras de cocina, muebles de MDF, pisos de porcelanato."/>
         </div>
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/dormitorio.jpg" alt="dormitorio" class="w_100" data-caption="Dormitorio principal con walk in closet y baño integrado." />
+          <img src="images/gallery/dormitorio-principal.png" alt="dormitorio" class="w_100" data-caption="Dormitorio principal con walk in closet y baño integrado." />
         </div>
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/sala.jpg" alt="sala" class="w_100" data-caption="Sala" />
+          <img src="images/gallery/sala.png" alt="sala" class="w_100" data-caption="Sala" />
         </div>
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/bano-principal.jpg" alt="baño principal" class="w_100" data-caption="Baño principal. Acabados de calidad."  />
+          <img src="images/gallery/bano.png" alt="baño principal" class="w_100" data-caption="Baño principal. Acabados de calidad."  />
         </div>
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
-          <img src="images/gallery/dormitorio-secundario.jpg" alt="dormitorio secundario" class="w_100" data-caption="Dormitorio secundario." />
+          <img src="images/gallery/dormitorio-secundario.png" alt="dormitorio secundario" class="w_100" data-caption="Dormitorio secundario." />
         </div>
       </div>
     </div>
+    <div class="w_100 carousel ">
+        <div class="owl-carousel owl-theme">
+          <div class="manPhone section_bottom_center" >
+<img src="images/slider-1.png" class="w_100 carousel__img" style="height: 95vh 
+            ;object-fit: cover
+            ;object-position: top";   />
+          </div>
+          <div class="manPhone section_bottom_center">
+<img src="images/slider-2.png" class="w_100 carousel__img" style="height: 95vh 
+            ;object-fit: cover
+            ;object-position: top";   />
+          </div>
+          <div class="manPhone section_bottom_center" >
+<img src="images/slider-3.png" class="w_100 carousel__img" style="height: 95vh 
+            ;object-fit: cover
+            ;object-position: top";  />
+          </div>  
+        </div> 
+          <div class="espacios carousel-espacios w_100 section_top_center"> 
+            <div class="section_middle_center w_85 w_60_desktop">
+            <div class="w_100 w_50_desktop">TE DAMOS EL ESPACIO QUE NECESITAS</div>
+            <div class="w_100 w_50_desktop section_middle_justify">
+              <img src="images/espacios/desde-hasta.svg" alt="desde hasta" class="espaciosItem" data-aos="zoom-in" data-aos-delay="500"
+                data-aos-duration="600" />
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--
     <div class="parallax-window manPhone section_bottom_center" data-parallax="scroll" data-image-src="images/man.jpg" data-position-y="top">
       <div class="espacios w_100 section_top_center">
         <div class="section_middle_center w_85 w_60_desktop">
@@ -122,8 +155,8 @@ a tu estilo de vida.</mark>
         </div>
       </div>
     </div>
-
-
+  -->
+<!--
     <div class="where section_middle_center w_100" > 
       <div class="w_90 w_60_desktop">
             <h2 class="nm__title w_100_desktop">DECIDE DÓNDE QUIERES VIVIR</h2>
@@ -164,10 +197,10 @@ a tu estilo de vida.</mark>
           <button class="btn btn-outline-jade-thin font-400">Jade</button>
       </div>
      
+    </div> 
     </div>
 
-
-    </div>
+  -->
     <div class="section_middle_center w_100">
       <div class="w_85 w_60_desktop section_top_justify dormitorios">
         <div class="w_100 w_31_desktop" class="espaciosItem" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
@@ -283,5 +316,9 @@ a tu estilo de vida.</mark>
       <div id="captionModal" class="w_100"></div>
     </div>
   </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+ $('.owl-carousel').owlCarousel({ margin:10, loop:true, items:1 })
+</script>
 </body> 
 </html>

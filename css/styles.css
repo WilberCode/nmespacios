@@ -2546,6 +2546,37 @@
   overflow: hidden;
 }
 
+.showModal {
+  text-align: center;
+}
+.showModal img[src*=bano], .showModal img[src*=bano-principal] {
+  width: 80% !important;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel-espacios {
+  position: absolute;
+  bottom: 3em;
+  z-index: 7;
+}
+
+@media all and (max-width: 700px) {
+  .carousel__img {
+    height: 60vh !important;
+  }
+
+  .manPhone {
+    height: 60vh !important;
+    margin-top: 0;
+  }
+
+  .carousel-espacios {
+    bottom: 4em;
+    z-index: 7;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
@@ -3067,7 +3098,7 @@ body {
 
   .logoFRM {
     position: absolute;
-    width: 8vw;
+    width: 7vw;
     bottom: 0;
     right: 18vw;
   }
