@@ -14,14 +14,14 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/aos.css" rel="stylesheet">
   <!--<link rel="stylesheet" type="text/css" href="css/styles.min.css" />-->  
-  <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+ <!-- owl-->
+  <link rel="stylesheet" href="src/owl/assets/owl.carousel.css">
+  <link rel="stylesheet" href="src/owl/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="src/owl/assets/owl.theme.green.min.css">
 
   <!-- <script src="js/slick.min.js"></script> -->
   <script src="js/parallax.min.js"></script>
@@ -39,7 +39,7 @@
 <body class="section_middle_center">
   <header class="w_100 section_middle_center">
     <div class="wrappHeader w_85 w_60_desktop section_middle_justify">
-      <a href="" class="logo"> <img src="images/logo.svg" alt="NM espacios" /> </a>
+      <a href="" class="logo"> <img src="images/logonm.png" alt="NM espacios" /> </a>
       <nav>
         <ul class="section_middle_right">
           <li><a href="#nosotros" class="scrollLink">NOSOTROS</a></li>
@@ -132,7 +132,8 @@ a tu estilo de vida.
 <img src="images/slider-3.png" class="w_100 carousel__img" style="height: 95vh 
             ;object-fit: cover
             ;object-position: top";  />
-          </div>  
+          </div>   
+
         </div> 
           <div class="espacios carousel-espacios w_100 section_top_center"> 
             <div class="section_middle_center w_85 w_60_desktop">
@@ -315,10 +316,20 @@ a tu estilo de vida.
       <div id="imageModal" class="section_middle_center w_100"></div>
       <div id="captionModal" class="w_100"></div>
     </div>
-  </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </div> 
+<!-- owl-->
+<script src="src/owl/owl.carousel.min.js"></script>
 <script>
- $('.owl-carousel').owlCarousel({ margin:10, loop:true, items:1 })
+ $('.owl-carousel').owlCarousel(
+   { 
+     margin:0, 
+     loop:true, 
+     items:1,
+     autoplay:true,
+     autoplayTimeout:4000,
+     autoplayHoverPause:true
+   }
+   )
 </script>
 </body> 
 </html>
