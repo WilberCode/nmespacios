@@ -1,3 +1,64 @@
+.container
+    max-width: 1137px
+    margin-right: auto
+    margin-left: auto
+    @media (max-width:1170px)
+        padding-right: 1em
+        padding-left: 1em
+.services 
+    &__title
+        font-size: 20px
+        margin-bottom: 0px
+    &__description 
+        background: transparent
+        letter-spacing: 1.001px
+    &-list
+        width: 100%
+        margin: 1vw 0 0 
+        li
+            position: relative
+            padding-left: 22px
+            margin: 10px 0
+            font-weight: 700  
+            &::before
+                content: ""
+                width: 10px
+                height: 10px
+                background-color: $second-jade
+                position: absolute
+                top: 8px
+                bottom: 0
+                left: 0
+                margin: 0
+    &-characteristics
+        padding-left: 5em
+        padding-top: 2.5em
+        @media (max-width:500px)
+            padding-left: 3em
+        li 
+            margin-bottom: 1.2em
+            position: relative
+            vertical-align: middle
+            img
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                width: 56px
+                vertical-align: middle 
+                margin-left: -4em
+                @media (max-width:500px)
+                    width: 40px
+                    margin-left: -3em
+                    
+            span  
+                vertical-align: middle
+                font-family: $primaryFont
+                font-weight: 600
+                font-size: 22px
+                letter-spacing: 1.1px
+                @media (max-width:800px)
+                    font-size: 15px
+    
 .showModal 
     text-align: center
     img[src*="bano"],img[src*="bano-principal"]
@@ -6,11 +67,9 @@
     position: relative
     &-espacios
        position: absolute
-       bottom: 3em
+       bottom: 3.6em
        z-index: 7 
-
-
-
+ 
 @media all and (max-width: 700px)
     .carousel__img
         height: 60vh !important

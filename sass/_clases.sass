@@ -6,9 +6,9 @@
 .bg-jade
   background: $second-jade 
 .gray-light  
-  background:  $gray-light
+  background: $gray-light
 .gray-dark 
-  background:  $gray-dark
+  background: $gray-dark
 // TEXT Colors 
 .text-dark
   color: $first-blue-dark 
@@ -78,11 +78,11 @@
   .border-t-#{$i}
     border-top: $i+px solid #ffffff
   .border-r-#{$i}
-    border-right:$i+px solid $first-blue-dark
+    border-right: $i+px solid $first-blue-dark
   .border-b-#{$i}
-    border-bottom:$i+px solid $first-blue-dark
+    border-bottom:  $i+px solid $first-blue-dark
   .border-l-#{$i}
-    border-left:$i+px solid $first-blue-dark
+    border-left:  $i+px solid $first-blue-dark
 
 .border-dark
   border-color: $first-blue-dark
@@ -101,7 +101,7 @@
   padding-top: 10px
   padding-right: 16px
   padding-bottom: 10px
-  padding-left:16px
+  padding-left: 16px
   font-size: 15px
   font-weight: 500
   cursor: pointer
@@ -112,7 +112,6 @@
   @include button-bg($first-blue-black,#ffffff)
 .btn-jade
   @include button-bg($second-jade,#ffffff) 
-
 .btn-outline-dark 
   @include button-outline(2,$first-blue-dark)   
 .btn-outline-dark-thin
@@ -130,7 +129,7 @@
 @for $f from 1 through 9
   /*fonts #{$f}00*/
   .font-#{$f}00
-    font-weight: #{$f}00
+    font-weight: #{$f}0#{0}
 
 // Font Size 
 @for $i from 8 through 40
@@ -140,7 +139,7 @@
 
 // Font Family 
 .font-ak
-  font-family:$primaryFont
+  font-family: $primaryFont
 
 // Display
 .inline-block
